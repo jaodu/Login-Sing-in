@@ -1,0 +1,74 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background-image: url(https://media.istockphoto.com/id/1338319555/vector/smooth-blend-rainbow-glow-abstract-background.jpg?s=612x612&w=0&k=20&c=LPA20OPGWr99oB3pNT7RABEodDZa24Yd3J8aIaVUq4o=);
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container-geral {
+    display: flex;
+    align-items: center;
+}
+.formContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50vw;
+    height: 15vw;
+}
+
+.semloginContainer {
+    background-color: rgb(126, 126, 126);
+    width: 25vw;
+    height: 15vw;
+    border-radius: 1vw;
+    position: absolute;
+    right: 25vw;
+
+}
+
+@keyframes passaesq {
+
+    0%{right: 25vw;}
+    100%{
+        right: 50vw;
+    }
+
+}
+
+@keyframes passadir {
+
+    0%{right: 50vw;}
+    100%{
+        right: 25vw;
+    }
+
+}
+
+
+.irparaesquerda{
+    animation: passaesq 1s ease-in-out forwards;
+
+}
+
+.irparadireita{
+    animation: passadir 1s ease-in-out forwards ;
+
+}
+
+
