@@ -7,37 +7,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Login | Sign-in</title>
 </head>
 <body>
-    
+
     <form method="post">
         <div class="container-geral">
 
             <div class="formContainer">
 
                 <div id="loginContainer" class="loginContainer">
-                    <h1>Login</h1>
-                    <input type="text" name="username" placeholder="Username">
+                    <h1 class="entrar">Entrar</h1>
+                    <hr>
                     <br>
-                    <input type="password" name="password" placeholder="Password">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <a href="#" class="esqueceu">Esqueceu sua senha?</a>
+                    <br>
+                    <br>
+                    <hr>
                     <br>
                     <button class="loginButton" type="button">Entrar</button>
                 </div>
 
                 <div id="signContainer" class="signContainer">
-                    <h1>Cadastro</h1>
-                    <input type="text" name="username" placeholder="Username">
+                    <h1 class="cadastro">Cadastro</h1>
+                    <hr>
                     <br>
-                    <input type="password" name="password" placeholder="Password">
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <hr>
                     <br>
                     <button class="signButton" type="button">Cadastre-se</button>
                 </div>
             </div>
 
             <div id="semloginContainer" class="semloginContainer">
-                <h1 id="h1">Ainda não tem cadastro?</h1>
-                <button class="newButton" id="newButton" type="button">Cadastrar-se agora!</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 id="h1" class="naotem">Ainda não tem cadastro?</h1>
+                <p class="pcontainer">Registre-se com seus dados pessoais para usar todos os recursos do nosso site.</p>
+                <button class="newButton" id="newButton" type="button">Cadastrar</button>
             </div>
         </div>
     </form>
